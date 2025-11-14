@@ -1,0 +1,286 @@
+/* message */
+p{
+    margin: 0;
+}
+
+.recruit_message_subtitle{
+    margin-bottom: 8rem;
+}
+.recruit_message{
+    background: url(/assets/images/recruit_message_bg.jpg) no-repeat top;
+    background-size: auto;
+}
+
+/* recruit_colab */
+
+.recruit_colab{
+    background-color: #f2f2f2;
+}
+.recruit_colab_content{
+    background-color: #fff;
+    padding: 6rem 8rem;
+}
+.recruit_colab_content_des{
+    line-height: 2.6rem;
+    p{
+        margin: 0;
+    }
+}
+
+/* recruit_enviroment */
+
+.recruit_enviroment_content{
+    border: 1px solid #ae6938;
+    padding: 6rem 8rem;
+}
+
+/* recruit_job */
+.recruit_job_item_inner{
+    display: flex;
+    width: 53rem;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.recruit_job_item{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.recruit_job_item_icon{
+    width: 1.87rem;
+    height: 2rem;
+}
+.recruit_job_item_info{
+    display: flex;
+    gap: 1.5rem;
+}
+.recruit_job_title{
+    margin-bottom: 5rem;
+}
+.recruit_job{
+    background-color: #f2f2f2;
+}
+.recruit_job_item_button{
+    color: #ae6938;
+    border-radius: 2rem;
+    background-color: #f5ede6;
+    width: 13rem;
+    height: 4rem;
+    border: 1px solid #ae6938;
+    letter-spacing: 2.5px;
+    transition: all .4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: #fff;
+    }
+}
+
+/* recruit_interview */
+
+.recruit_interview_inner{
+    display: flex;
+    gap: 3rem;
+    
+}
+.recruit_interview_item{
+    display: flex;
+    width: calc(50% - 1.5rem);
+    gap: 2rem;
+}
+.recruit_interview_img{
+    width: calc(50% - 1rem);
+    height: max-content;
+}
+.recruit_interview_info{
+    width: calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recruit_interview_info_des{
+    letter-spacing: 2.5px;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+.recruit_interview_info_posi{
+    margin-bottom: 2rem;
+}
+.recruit_interview_info_button{
+    color: #ae6938;
+    border: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease;
+    width: 20rem;
+    height: 4.2rem;
+    letter-spacing: .35rem;
+    cursor: pointer;
+}
+.recruit_interview_model{
+    position: fixed;
+    z-index: 1000000;
+    pointer-events: none;
+    transition: all .4s ease;
+    inset: 0;
+    &.active{
+        pointer-events: all;
+        .recruit_interview_model_wrap{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .recruit_interview_model_overlay{
+            opacity: 1;
+        }
+    }
+    .recruit_interview_model_wrap{
+        position: absolute;
+        opacity: 0;
+        transform: translateY(-5rem);
+        z-index: 2;
+        background-color: #fff;
+        inset: 0;
+        top: 5vh;
+        bottom: 8vh;
+        transition: all .4s ease;
+    }
+}
+.recruit_interview_model_overlay{
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all .4s ease;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.recruit_interview_model_des{
+    overflow-y: scroll;
+    height: calc(100vh - 40rem);
+}
+.recruit_interview_model_inner{
+        max-width: 1040px;
+    width: 90%;
+    margin-inline: auto;
+}
+.recruit_interview_model_title{
+        padding-top: 8rem;
+    margin-bottom: 4rem;
+}
+.recruit_interview_model_title_inner{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    .recruit_interview_info_posi{
+        margin-bottom: 0;
+    }
+}
+.recruit_interview_model_button{
+    margin-top: 2rem;
+    width: 20rem;
+    margin-inline: auto;
+    background-color: #743600;
+    height: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+
+/* recruit_jobdes */
+
+.recruit_jobdes{
+    background-color: #f2f2f2;
+    position: relative;
+    .recruit_jobdes_item:last-child{
+        .recruit_jobdes_item_button{
+            margin-bottom: 0;
+        }
+    }
+}
+.recruit_jobdes_item_title{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+.recruit_jobdes_item_inner{
+    border-top: 1px solid #fff;
+    margin-bottom: 6rem;
+}
+.recruit_jobdes_item_row{
+    border-bottom: 1px solid #fff;
+    padding-block: 2rem;
+    padding-inline: 12.5%;
+    display: flex;
+}
+.recruit_jobdes_item_row_title{
+    width: 14.5rem;
+    color: #743600;
+    letter-spacing: 2.2px;
+}
+.recruit_jobdes_item_row_des, .recruit_jobdes_item_row_des *{
+    letter-spacing: 2.2px;
+    line-height: 2.6rem;
+}
+.recruit_jobdes_item{
+    margin-top: 8rem;
+    position: relative;
+}
+.recruit_jobdes_line{
+    width: 16rem;
+    position: absolute;
+    top: -5rem;
+    left: 9.5rem;
+}
+.recruit_jobdes_item_icon{
+    top: -3rem;
+    right: 0;
+    width: 14rem;
+    position: absolute;
+    cursor: pointer;
+    transition: all .4s ease;
+    &:hover{
+        opacity: .8;
+    }
+}
+.recruit_jobdes_item_button{
+    width: 38rem;
+    height: 6rem;
+    margin-bottom: 11rem;
+    position: relative;
+    z-index: 888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    &:hover{
+      /* background-color: #743600; */
+      &::before{
+        opacity: 0;
+      }
+    }
+    &::before{
+      background: transparent
+    linear-gradient(97deg, #743600 0%, #d1a985 72%, #ae6938 100%) 0% 0%
+    no-repeat padding-box;
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    transition: all .4s ease;
+    content: "";
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: #743600;
+      z-index: -2;
+    }
+}
