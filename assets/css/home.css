@@ -72,8 +72,15 @@
     padding-block: 17.5rem 13.5rem;
     background: url(/assets/images/home_about_bg.svg) no-repeat top 27% center;
 }
+.home_hero_content_img_item_title{
+    max-width: 600px;
+}
 .home_about_content_img{
     margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    text-align: center;
 }
 .home_about_content_title{
     margin-bottom: 5rem;
@@ -184,7 +191,7 @@
 /* home_service */
 .home_service{
     padding: 16rem 0;
-    background-color: #f2f2f2;
+    background-color: #F5F2E9;
 }
 .home_service_img_wrap{
     padding-right: 4rem;
@@ -310,7 +317,7 @@
 /* home_access */
 .home_access{
     padding-bottom: 16rem;
-    background-color: #f2f2f2;
+    background-color: #F5F2E9;
 }
 
 .home_access_inner{
@@ -486,7 +493,7 @@
     padding-block: 9rem 12rem;
 }
 .home_company_contact{
-    background-color: rgba(242, 242, 242, 0.8);
+    background-color: #f5f2e9b5;
     padding-bottom: 11.5rem;
 }
 .home_company_contact_inner{

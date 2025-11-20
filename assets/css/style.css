@@ -168,9 +168,24 @@ h1, h2{
 .txt_title{
     font-size: 2.2rem;
     font-weight: bold;
+    line-height: 1.2;
     letter-spacing: .35rem;
     margin-bottom: 1rem;
     font-family: 'BeVietnamPro';
+}
+.txt_title_big {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'BeVietnamPro';
+  margin-bottom: 1rem;
+}
+.txt_title_hero {
+  font-size: 7.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'BeVietnamPro';
+  margin-bottom: 1rem;
 }
 .txt_subtitle{
   font-size: 1rem;
@@ -616,6 +631,14 @@ h1, h2{
     display: flex;
     .footer_top_menu_item:last-child{
       padding-right: 0;
+    }
+    &.mobile {
+      display: none;
+    }
+    @media screen and (max-width:767px) {
+      .mobile {
+        display: flex;
+      }
     }
 }
 .footer_top_menu_item{
