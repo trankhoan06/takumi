@@ -277,7 +277,7 @@ h1, h2{
   display: none;
 }
 .mobile{
-  display: none;
+  display: none !important;
 }
 .txt_uppercase{
   text-transform: uppercase;
@@ -687,6 +687,9 @@ h1, h2{
 }
 
 @media screen and (max-width:767px) {
+  .footer_top_menu{
+    display: flex !important;
+  }
   .footer_content{
     display: flex;
     flex-direction: column;

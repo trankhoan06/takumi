@@ -5,3 +5,13 @@ $('#check').on('change', function() {
         $('.contact_form_submit').removeClass('active');
     }
 });
+
+$('.contact_model_button').on('click', function() {
+  $('.contact_model').removeClass('active');
+});
+$('.contact_model_overlay').on('click', function() {
+  $('.contact_model').removeClass('active');
+});
+$('.contact_form_policy strong').on('click', function() {
+  $('.contact_model').addClass('active');
+});

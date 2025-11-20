@@ -10,7 +10,16 @@ p{
     background: url(/assets/images/recruit_message_bg.jpg) no-repeat top;
     background-size: auto;
 }
-
+@media screen and (max-width:767px) {
+    .recruit_message_des {
+        font-size: 1.5rem;
+        text-align: left;
+        letter-spacing: 1.5px;
+    }
+    .recruit_message_subtitle{
+        margin-bottom: 6rem;
+    }
+}
 /* recruit_colab */
 
 .recruit_colab{
@@ -26,12 +35,30 @@ p{
         margin: 0;
     }
 }
+@media screen and (max-width:767px) {
+    .recruit_colab_content{
+        padding: 4rem 2rem;
+    }
+    .recruit_colab_content_des {
+        font-size: 1.5rem;
+        letter-spacing: .24rem;
+    }
+}
 
 /* recruit_enviroment */
 
 .recruit_enviroment_content{
     border: 1px solid #ae6938;
     padding: 6rem 8rem;
+}
+@media screen and (max-width:767px) {
+    .recruit_enviroment_content{
+        padding: 4rem 2rem;
+    }
+    .recruit_enviroment_content_des  {
+        font-size: 1.5rem;
+        letter-spacing: .24rem;
+    }
 }
 
 /* recruit_job */
@@ -67,7 +94,7 @@ p{
     background-color: #f5ede6;
     width: 13rem;
     height: 4rem;
-    border: 1px solid #ae6938;
+    border: 2px solid #ae6938;
     letter-spacing: 2.5px;
     transition: all .4s ease;
     display: flex;
@@ -75,6 +102,24 @@ p{
     align-items: center;
     &:hover{
         background-color: #fff;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .recruit_job_item_inner{
+        width: 100%;
+        gap: 1rem;
+    }
+    .recruit_job_item_name {
+        font-size: 1.4rem !important;
+    }
+    .recruit_job_item_icon{
+        width: 1.5rem;
+    }
+    .recruit_job_item_button {
+        width: 9rem;
+        height: 3rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -115,7 +160,8 @@ p{
     justify-content: center;
     align-items: center;
     transition: all .4s ease;
-    width: 20rem;
+    max-width: 20rem;
+    width: 100%;
     height: 4.2rem;
     letter-spacing: .35rem;
     cursor: pointer;
@@ -190,7 +236,32 @@ p{
 
     cursor: pointer;
 }
-
+@media screen and (max-width:767px) {
+    .recruit_interview_inner{
+        gap: 6rem;
+        flex-direction: column;
+    }
+    .recruit_interview_item{
+        width: 100%;
+        flex-direction: column;
+    }
+    .recruit_interview_img {
+        width: 100%;
+    }
+    .recruit_interview_info{
+        width: 100%;
+    }
+    .recruit_interview_info_button {
+        width: 100%;
+        max-width: unset;
+    }
+    .recruit_interview_info_time {
+        font-size: 1.3rem;
+    }
+    .recruit_interview_info_posi {
+        font-size: 2rem;
+    }
+}
 
 
 /* recruit_jobdes */
@@ -282,5 +353,52 @@ p{
       inset: 0;
       background-color: #743600;
       z-index: -2;
+    }
+}
+@media screen and (max-width:991px) {
+    .recruit_jobdes_line{
+        left: -1rem;
+    }
+    .txt_title{
+        font-size: 2rem; 
+        margin-bottom: .5rem;
+        letter-spacing: .32rem;
+    }
+    .txt_15{
+        font-size: 1.5rem;
+    }
+    .txt_16{
+        font-size: 1.6rem;
+    }
+    .recruit_jobdes_line{
+        width: 6rem;
+        left: 3%;
+    }
+    .recruit_jobdes_item{
+        margin-top: 5rem;
+    }
+    .recruit_jobdes_item_icon {
+        width: 10rem;
+        top: 3.5rem;
+    }
+    .recruit_jobdes_item_title_txt {
+        font-size: 1.6rem; 
+    }
+    .recruit_jobdes_item_row{
+        padding-inline: 0;
+        flex-direction: column;
+        padding-block: 1.5rem;
+        gap: 1rem;
+    }
+    .recruit_jobdes_item_inner{
+        margin-bottom: 4rem;
+    }
+    .recruit_jobdes_item_button{
+        margin-bottom: 6.5rem;
+    }
+    .recruit_jobdes_item_button {
+        width: 29rem;
+        height: 5rem;
+        font-size: 1.5rem;
     }
 }
